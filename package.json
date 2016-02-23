@@ -1,0 +1,20 @@
+{
+  "name": "delicious",
+  "version": "1.0.0",
+  "description": "place your orders for easy",
+  "main": "app.js",
+  "scripts": {
+    "test": "test karma"
+  },
+  "repository": {
+    "type": "git",
+    // "url": "git+https://github.com/santhuuu0007/delicious.git"
+    "url": "https://github.com/santhuuu0007/delicious.git"
+  },
+  "author": "santhosh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santhuuu0007/delicious/issues"
+  },
+  "homepage": "https://github.com/santhuuu0007/delicious#readme"
+}
