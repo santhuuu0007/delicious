@@ -4,11 +4,11 @@
   "description": "place your orders for easy",
   "main": "app.js",
   "scripts": {
-    "test": "test karma"
+    "test": "test karma",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
-    // "url": "git+https://github.com/santhuuu0007/delicious.git"
     "url": "https://github.com/santhuuu0007/delicious.git"
   },
   "author": "santhosh",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/santhuuu0007/delicious/issues"
   },
-  "homepage": "https://github.com/santhuuu0007/delicious#readme"
+  "homepage": "https://github.com/santhuuu0007/delicious#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
