@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+</head>
+<body>
+<div ng-controller="aboutCtrl">
+    <!--This is the about Template - {{variable}}
+    <br>
+    (
+    <br>Parameter: {{param}}
+    <br>)
+    <div ui-view>
+            <div ui-view="header"></div>
+            <div ui-view="body"></div>
+            <div ui-view="footer"></div>
+    </div>-->
+   
+    <div ng-repeat="da in data">
+        <div class="col-md-offset-1 col-xs-10">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{da.type}}</h3>
+                </div>
+                <div class="panel-body" >
+                    <div class="box panel panel-success" ng-click="selected(it);" ng-repeat="it in da.items">
+                            <div class="fixed-rectangle panel-heading  " > 
+                                 <span style="float:left" >{{it.name}}</span>
+                                 <span style="float:right">{{it.price}}</span>
+                                 <span class="divv" style="" >{{it.description}}</span> 
+                            </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

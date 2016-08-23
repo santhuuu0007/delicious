@@ -1,0 +1,34 @@
+<div ng-controller="homeCtrl" ng-cloak ng-class="">   
+     <!--This is the home Template - {{variable}}
+            <br><br>
+        <select ng-model="route" ng-options="x.location for x in routes"> 
+            <option value="" selected>Select</option>
+        </select>
+        
+        <ul>
+            <li ng-repeat="x in routes">{{x.location}}</li>
+        </ul>
+        <button ng-click="gotoroute()">Go</button>-->{{username}}
+          <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 ">
+            <div class="dropdown">
+                <input type="text" data-toggle="dropdown" ng-model="selectedLocation" class="dropdown-toggle form-control input-sm" placeholder="Enter State or City">
+                <ul class="col-xs-12 dropdown-menu">
+                    <li ng-repeat="loc in locations | filter:{name:selectedLocation}" ng-click="AreaSelected(loc);"><a href="">{{loc.name}}</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-0 ">
+           <div class="dropdown">
+                <input type="text" data-toggle="dropdown" ng-model="selectedRestaurant" class="dropdown-toggle form-control input-sm" placeholder="Type Indian Italian">
+                <ul class="col-xs-12 dropdown-menu">
+                    <!--<li ng-repeat="rest in restaurants | filter:{name:selectedRestaurant,location:selectedLocation}" ng-click="RestaurantSelected(rest);" ><a  href="">{{rest.name}}</a></li>-->
+                    <li ng-repeat="rest in restaurants | filter:{name:selectedRestaurant,location:selectedLocation}" ng-click="RestaurantSelected(rest);" ><a  href="">{{rest.name}}</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="col-sm-offset-3">
+            <div class="col-xs-12  col-sm-pull-2" id="grid1" ui-grid="gridOptions" class="grid"></div>
+        </div>
+</div

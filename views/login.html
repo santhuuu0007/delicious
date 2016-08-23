@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    
+</head>
+<body ng-controller="loginCtrl">
+    {{loginUserName}}
+    <div class="container">
+        <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        	<div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Login</h3>
+                </div>                   
+                    <div class="panel-body">
+                        <div class="form-group">
+                            
+			    			<input type="text" ng-model="loginUserName" class="form-control input-sm" placeholder="Email Address">
+			    		</div>
+                        <div class="form-group">
+			    			<input type="password" ng-model="loginPassword" class="form-control input-sm" placeholder="Password">                            
+                        </div>
+                        <div class="form-group">
+			    			<input  ng-click="login();" value="Login" class="btn btn-success btn-block">
+                            
+                        </div>
+                    </div>
+            </div>
+            <div class="panel panel-default">
+                
+                <div class="panel-heading">
+			    		<h3 class="panel-title">Sign up </h3>
+			 	</div>
+			 	<div class="panel-body">
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			                <input type="text" ng-model="newUser.firstName" class="form-control input-sm" placeholder="First Name">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" ng-model="newUser.lastName" class="form-control input-sm" placeholder="Last Name">
+			    					</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="form-group">
+			    			<input type="text" ng-model="newUser.email" class="form-control input-sm" placeholder="Email Address">
+                                
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="password" ng-model="newUser.password" class="form-control input-sm" placeholder="Password">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="password" ng-model="newUser.confirmPassword" class="form-control input-sm" placeholder="Confirm Password">
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<input ng-click="register(newUser);"  value="Register" class="btn btn-success btn-block">
+			    	</div>
+	    	</div>
+    	</div>
+    	</div>
+    </div>
+</body>
+</html>
