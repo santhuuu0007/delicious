@@ -22,9 +22,12 @@ app.route('/restapi/:username').get(
         // Get data from data base and put in array and convert this to json and res.send json
         res.send("Hi" + user_name);
     }); 
-    
-http.listen(9001,function(){
-    console.log("Server listen at 9001");
-});
+
+var port_number = server.listen(process.env.PORT || 3000);
+app.listen(port_number);
+
+// http.listen(9001,function(){
+//     console.log("Server listen at 9001");
+// });
 
 // http://jsfiddle.net/alexsuch/RLQhh/
