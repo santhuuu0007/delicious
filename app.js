@@ -23,8 +23,6 @@ app.route('/restapi/:username').get(
         res.send("Hi" + user_name);
     }); 
 
-var port_number = server.listen(process.env.PORT || 3000);
-app.listen(port_number);
 
 // http.listen(9001,function(){
 //     console.log("Server listen at 9001");
